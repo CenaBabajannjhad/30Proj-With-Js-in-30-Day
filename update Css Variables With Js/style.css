@@ -1,0 +1,52 @@
+:root{
+    --color: #ffc600;
+    --spacing: 10px;
+    --blur: 0px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #27385c;
+    overflow: hidden;
+}
+header{
+    text-align: center;
+}
+header > h1{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.js-span{
+    color: yellow;
+    font-size: 2.9rem !important;
+}
+.controler-section{
+    padding-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controler-section > div{
+    margin: 0px 20px;
+}
+.controler-section > div > label{
+    font-size: 2rem;
+    color: white;
+}
+.target-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.target{
+    background-color: var(--color);
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+}
