@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+}
+.completed{
+  color: gray;
+  text-decoration: line-through;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    #fff,
+    #fff,
+    #fff,
+    #f8eaff,
+    rgb(226, 243, 254),
+    #ffedf9,
+    #e9ddff,
+    #fff,
+    #fff,
+    #fff
+  );
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+/* header */
+header > div {
+  text-align: center;
+  padding: 20px 0px;
+}
+header > div > h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+h1 {
+  background-image: linear-gradient(45deg, #ff7e74, #3b82f6, #c084fc, #db2777);
+  color: transparent;
+  -webkit-background-clip: text; /* Edge, Chrome */
+  background-clip: text; /* Safari, FF */
+  animation: gradientAnimation 8s linear infinite;
+  animation-direction: alternate;
+  background-size: 300% 100%;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+/* form */
+.section-form {
+  margin: 20px 0px;
+}
+form {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 5px;
+}
+input {
+  background: none;
+  border: #3b82f6 2px solid;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 4px #00000020;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  transition: background-color 0.1s ease-out;
+  box-shadow: 0px 2px 4px #00000020;
+  text-transform: capitalize;
+}
+button:hover {
+  background-color: #0d5ad7;
+}
+input:hover {
+  border-color: #0d5ad7;
+}
+input:focus {
+  outline: none;
+}
+.section-todos {
+  padding: 20px 0px;
+}
+.todo-template {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 25px #00000015;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+h2 {
+  width: 50%;
+  text-transform: capitalize;
+}
+.todo-template > div > button {
+  margin: 0px 5px;
+}
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
