@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+header {
+  text-align: center;
+  padding: 20px 0px;
+}
+h1 {
+  font-size: 6rem;
+  font-weight: 100;
+}
+.form-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-container > div {
+  margin: 0px 15px;
+}
+input {
+  padding: 5px 10px;
+}
+button {
+  padding: 10px;
+}
+
+.stop {
+  position: fixed;
+  bottom: -40%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  transition: all 0.3s ease-out;
+  padding: 15px 30px !important;
+  background: #49f0ff;
+  cursor: pointer;
+}
+.countdown-finished {
+  position: fixed;
+  top: -100%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #73f3ff;
+  background-color: #000000b0;
+  backdrop-filter: blur(30px);
+  transition: all .3s ease-out;
+}
+.countdown-finished-container {
+  text-align: center;
+}
+.countdown-finished-container > button {
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .countdown-finished {
+    font-size: 4rem;
+  }
+}
