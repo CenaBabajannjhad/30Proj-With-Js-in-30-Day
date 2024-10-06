@@ -1,0 +1,18 @@
+.box-red{
+    background-color: lightcoral;
+    width: fit-content;
+    padding: 20px;
+    margin: 5px;
+}
+.box-blue{
+    background-color: blue;
+    width: fit-content;
+    padding: 20px;
+    margin: 5px;
+}
+.box-yellow{
+    background-color: yellow;
+    width: fit-content;
+    padding: 20px;
+    margin: 5px;
+}
