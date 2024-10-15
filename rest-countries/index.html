@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <section class="header container flex">
+      <div>Where in the world?</div>
+      <div>dark mode</div>
+    </section>
+  </header>
+  <main class="container">
+    <section class="top-bar flex">
+      <div class="search-box">
+        <input id="search" type="text" placeholder="Search for a country..." />
+      </div>
+      <div class="region">
+        <select name="Filter by region" id="select-regions">
+          <option value="select" disabled>select region</option>
+          <option value="All">All</option>
+          <option value="Europe">Europe</option>
+          <option value="Asia">Asia</option>
+          <option value="Africa">Africa</option>
+          <option value="Oceania">Oceania</option>
+          <option value="Americas">Americas</option>
+        </select>
+      </div>
+    </section>
+    <section id="country-boxes-place" class="country">
+      <!-- add with js -->
+    </section>
+  </main>
+
+
+  <script src="./src/js/app.js"></script>
+  <script src="./src/js/filterCountries.js"></script>
+  <script src="./src/js/search.js"></script>
+</body>
+</html>
